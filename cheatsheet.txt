@@ -1,0 +1,11 @@
+touch .gitrummy
+git config --global user.name Utkarsh
+git config --global user.email utkarshraj525@gmail.com
+git init
+git add .
+git commit -m "Initial Commit"
+git status #just to see
+ssh-keygen -t ed25519 -C "utkarshraj525@gmail.com"
+tail <path to id_rsa.pub> # Add this key to your GitHub account
+git remote add origin <ssh url.git>
+git push origin master
